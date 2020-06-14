@@ -1,3 +1,2 @@
-# Demo
-
-Just learning how to use this!
+# TTT
+This is tic tac toe built using C++
