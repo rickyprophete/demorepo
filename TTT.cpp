@@ -28,7 +28,7 @@ void TTT::resetBoard()  ////Initialize a blank board & set currentPlayer to X
     currentPlayer = X; //by default first player is X
 }
 
-void TTT::resetBoardCopy()  ////set boardCopy equal to board
+void TTT::resetBoardCopy()  //set boardCopy equal to board
 {
     for (int i = 0; i < N; i++) {
         boardCopy[i] = board[i]; 
