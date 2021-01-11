@@ -1,2 +1,1 @@
-# TTT
-This is tic tac toe built using C++
+This is a list of projects I have built.
