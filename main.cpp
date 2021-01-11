@@ -1,41 +1,23 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-
-void bubbleSort(int arr[], int N){
-    int j, i, temp, flag, work = 0;
-    for(j = 1; j < N; j++)
-    {
-        flag = 0;
-        for(i = 0; i < N - j; i++)
-        {
-            if(arr[i] > arr[i + 1])
-            {
-                temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
-                flag = 1;
-                work++;
-            }
-        }
-        if(flag == 0)
-        {
-                break;
-        }
-    }
-
-    for(i = 0; i < N; i++)
-    {
-       cout << arr[i] <<' ';
-    }cout << endl;
-    cout << work;
-
-}
 
 int main()
 {
-    int arr[]={1,5,9,2,7};
-    const int N = sizeof(arr)/sizeof(int);
-    bubbleSort(arr,N);
+    int i,j,m,n,x,location;
+    cout <<"Enter a value to be searched: \n"; cin >> x;
+    int arr[]={1,2,3,4,5,6,7,8,9,10,11,22,33,44,55,66,77,88,99,111,222,333,444,555,666,777};
+    n = (sizeof(arr)/sizeof(arr[0]));
+    i=0,j = n-1;
+    while (i < j){
+        m = floor((i+j)/2);
+        if(x>arr[m]){
+            i = m + 1;
+        }else{j = m;}
+    }
+    (x==arr[i])? location = i : location = NULL;
+    cout<<"Index of value in array is: "<<location;
 
-    return 0;
+
+
 }
