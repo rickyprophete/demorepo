@@ -19,7 +19,7 @@ TTT::~TTT()
     delete[] boardCopy;  //clearing memory from heap
 }
 
-void TTT::resetBoard()  ////Initialize a blank board & set currentPlayer to X
+void TTT::resetBoard()  //Initialize a blank board & set currentPlayer to X
 {
     for (int i = 0; i < N; i++)
     {
