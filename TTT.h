@@ -8,7 +8,7 @@ public:
 
 private:
 	
-	////Variables used throughout program
+	//Variables used throughout program
 
 	static const int N = 9;            ////constant size of Board
 	char *board        = new char [N]; ////Used to keep track of final moves & to display
